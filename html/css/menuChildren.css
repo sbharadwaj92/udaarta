@@ -1,0 +1,17 @@
+/*
+Responsive Mobile Toggle Menu v2.2
+Description: Mobile first responsive toggle menu
+Author: Danielle Vautier
+*/
+
+/*Menu mobile first CSS*/
+body{ -webkit-animation: bugfix infinite 1s; }
+
+/*This fixes a chrome/webkit bug for older Android Browsers */
+@-webkit-keyframes bugfix { from {padding:0;} to {padding:0;} } 
+
+/*Required functional CSS don't change this bit
+CSS styles are at the end! */
+
+
+/*End Menu Child Styling*/
