@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   root 'pages#index'
   get 'how_it_works' => 'pages#how_it_works'
   get 'faq' => 'pages#faq'
