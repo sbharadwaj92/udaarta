@@ -1,0 +1,47 @@
+<div class="banner">
+<%= image_tag("inner page1.jpg", alt: "panel", class: "img-responsive") %>
+</div>
+
+
+
+<div class="container" style="width: 100%">
+  <div class="row">
+    <div class="workspace">
+      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+        <div class="welcome">
+          <ol class="breadcrumb">
+            <li><a href="index.html">About</a></li>
+            <li class="active">Donate</li>
+          </ol>
+          <h2>Donate</h2>
+          <p>We are working towards developing a comprehensive online
+            crowd sourcing platform which will allow our donors to review each
+            of the cases and choose to make a donation online. For the time
+            being, our volunteers will be morethan happy to help you
+            understand specific cases before you make your donation decision.</p>
+          <p>At the moment, we are accepting donations directly into our
+            corporate account as below eitehr via DD or via Online transfers.</p>
+          <p>Bank: Axis Bank Ltd.</p>
+          <p>Account Name: Udaarta Trust</p>
+          <p>IFSC:</p>
+          <p>Account#:</p>
+          <!--<a href="#">Read More</a>-->
+        </div>
+        <!--welcome end here-->
+
+      </div>
+<%= render 'pages/rightpanel' %>
+    </div>
+    <!--row end-->
+  </div>
+  <!--container-->
+</div>
+      <script>
+$(document).ready(function() {
+$(".foractive").click(function () {
+    $(".foractive").removeClass("active");
+    // $(".tab").addClass("active"); // instead of this do the below 
+    $(".foractive").addClass("active");   
+});
+});
+</script>
