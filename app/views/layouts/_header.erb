@@ -33,13 +33,19 @@
             type="checkbox" id="toggleMenu" />
           <ul>
             <!--<li><a href="index.html">HOME</a></li>-->
-            <li class="foractive"><%= link_to "ABOUT UDAARTA", root_path %></li>
-            <li class="foractive"><%= link_to "HOW IT WORKS", how_it_works_path%></li>
-            <li class="foractive"><%= link_to "FAQ", faq_path%></li>
+            <li><%= link_to "ABOUT UDAARTA", root_path %></li>
+            <li><%= link_to "HOW IT WORKS", how_it_works_path %></li>
+            <li><%= link_to "FAQ", faq_path %></li>
             <!--<li><a href="success stories.html">SUCCESS STORIES</a></li>-->
             <!--<li><a href="partners.html">PARTNERS</a></li>-->
-            <li class="foractive"><%= link_to "DONATE", donate_path%></li>
-            <li class="foractive"><%= link_to "TEAM", team_path%></li>
+            <li><%= link_to "DONATE", donate_path %></li>
+            <li><%= link_to "TEAM", team_path %></li>
+            <% if user_signed_in? %>
+              <li><%= link_to "PROFILE", edit_user_registration_path %></li>
+              <li><%= link_to "SIGN OUT", destroy_user_session_path, method: :delete %>
+            <% else %>
+              <li><%= link_to "SIGN IN/UP", new_user_session_path %></li>
+            <% end %>
           </ul>
         </nav>
 
