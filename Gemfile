@@ -19,5 +19,6 @@ group :development, :test do
   gem 'spring'
   group :production do
 	gem 'pg'
+	gem 'rails_12factor'
   end
 end
