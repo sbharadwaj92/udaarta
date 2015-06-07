@@ -1,1 +1,1 @@
-web: play run --http.port=$PORT $PLAY_OPTS
+bundle exec puma -t 5:5 -p ${PORT:-80} -e ${RACK_ENV:-production}
